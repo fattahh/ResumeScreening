@@ -23,6 +23,10 @@ def hash_password(password: str) -> str:
 
     使用 bcrypt 算法对密码进行哈希处理。
 
+    rounds=12 是当前的安全基准值。增加 rounds 会提高安全性但降低性能。
+    
+    随着硬件升级，未来可考虑动态调整此值。
+
     Args:
         password: 明文密码
 
